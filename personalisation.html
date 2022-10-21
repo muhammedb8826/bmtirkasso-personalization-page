@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personalisation</title>
+    <link rel="icon" href="logo/title icon.png" type="image/icon type" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Black+Ops+One&family=DynaPuff&family=Inter&family=Lora:ital@0;1&family=Mouse+Memoirs&family=Permanent+Marker&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="personalisation.css" />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row g-0" id="flex">
+        <div class="col-12 col-lg-3 original" id="a">
+          <!-- main section -->
+          <div class="main-section">
+            <!-- header -->
+            <div class="header">
+              <h2>Personalise Your Brush</h2>
+            </div>
+            <!--  -->
+            <div class="wrapper">
+              <!-- image and logo -->
+              <div class="image-and-logo">
+                <div class="font-icon" id="fi-1">
+                  <i class="bi bi-image"></i>
+                  <i class="bi bi-check2-square" id="bi-1"></i>
+                </div>
+                <div class="text"><span>LOGO OR YOUR IMAGE</span></div>
+              </div>
+              <!-- text and style -->
+              <div class="text-and-style">
+                <div class="font-icon" id="fi-2">
+                  <i class="bi bi-fonts"></i>
+                  <i class="bi bi-check2-square" id="bi-2"></i>
+                </div>
+                <div class="text"><span>TEXT & STYLE.</span></div>
+              </div>
+              <!-- color -->
+              <div class="colors">
+                <div class="font-icon" id="fi-3">
+                  <i class="bi bi-palette"></i>
+                  <i class="bi bi-check2-square" id="bi-3"></i>
+                </div>
+                <div class="text"><span>COLOURS.</span></div>
+              </div>
+            </div>
+            <div class="save-button-container">
+              <button class="save-btn">SAVE</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- image and logo after clicked -->
+        <div class="col-12 col-lg-3 after-click" id="aa">
+          <!-- main section -->
+          <div class="image-input-and-buttons">
+            <!-- steps -->
+            <div class="steps">
+              <span>STEP 1/3</span>
+            </div>
+            <!-- image and input label -->
+            <div class="image-input-and-label">
+              <input
+                type="file"
+                name="logo-image"
+                id="logo-image"
+                class="image-input"
+              />
+              <label for="logo-image" class="input-label">
+                <i class="bi bi-cloud-arrow-up"></i>
+                <span>CHOOSE FILE</span></label
+              >
+            </div>
+            <!-- confirm and cancel buttons -->
+            <div class="confirm-cancel-buttons">
+              <button class="cancel-editing">CANCEL</button>
+              <button class="confirm-editing">CONFIRM</button>
+              
+            </div>
+          </div>
+        </div>
+
+        <!-- text and style after clicked -->
+        <div class="col-12 col-lg-3 after-click-text-style" id="ab">
+          <!-- main section -->
+          <div class="text-showcase">
+            <!-- steps -->
+            <div class="steps">
+              <span>STEP 2/3</span>
+            </div>
+            <div class="text-showcase-header">
+              <h2>Text & Style.</h2>
+            </div>
+            <div class="text-showcase-input">
+              <input
+                type="text"
+                name="your-text"
+                oninput="display();"
+                value="Mine"
+                id="custom-text"
+              />
+              <span class="text-counter">0/14</span>
+            </div>
+            <div class="font-choose">
+              <div class="overflow-btn">
+                <h2 id="inter-font">Oleo Script Swash Caps</h2>
+                <h6>limit</h6>
+              </div>
+              <div class="overflow-btn">
+                <h2 i id="mouse-font">Mouse Memoirs</h2>
+                <h6>limit</h6>
+              </div>
+              <div class="overflow-btn">
+                <h2 id="lora-font">Lora</h2>
+                <h6>limit</h6>
+              </div>
+              <div class="overflow-btn">
+                <h2 id="bebas-font">Bebas Neue</h2>
+                <h6>limit</h6>
+              </div>
+              <div class="overflow-btn">
+                <h2 id="permanent-font">Permanent Marker</h2>
+                <h6>limit</h6>
+              </div>
+              <div class="overflow-btn">
+                <h2 id="black-ops-font">Black Ops One</h2>
+                <h6>limit</h6>
+              </div>
+              <div class="overflow-btn">
+                <h2 id="dynapuff-font">DynaPuff</h2>
+                <h6>limit</h6>
+              </div>
+            </div>
+            <div class="confirm-cancel-btn-text-style">
+              <button class="cancel-editing-text-style">CANCEL</button>
+              <button class="confirm-editing-text-style">CONFIRM</button>
+              
+            </div>
+          </div>
+        </div>
+
+        <!-- colors after clicked -->
+        <div class="col-12 col-lg-3 text-light after-click-colors" id="ac">
+          <!-- main section -->
+          <div class="colors-showcase">
+            <div class="steps">
+              <span>STEP 3/3</span>
+            </div>
+            <div class="text-showcase-header">
+              <h2>Colors.</h2>
+            </div>
+            <div class="color-row-container">
+            <div class="first-row-colors">
+              <button class="color-choose-btn" id="red-color"></button>
+              <button class="color-choose-btn" id="pink-color"></button>
+              <button class="color-choose-btn" id="gray-color"></button>
+              <button class="color-choose-btn" id="purple-color"></button>
+              <button class="color-choose-btn" id="green-color"></button>
+              <!-- to be displayed when media query matches -->
+
+              <!-- <button class="color-choose-btn" id="red1-color" ></button>
+              <button class="color-choose-btn" id="pink1-color"></button>
+              <button class="color-choose-btn" id="gray1-color"></button>
+              <button class="color-choose-btn" id="purple1-color"></button>
+              <button class="color-choose-btn" id="green1-color"></button>
+
+              <button class="color-choose-btn" id="red2-color"></button>
+              <button class="color-choose-btn" id="pink2-color"></button>
+              <button class="color-choose-btn" id="gray2-color"></button>
+              <button class="color-choose-btn" id="purple2-color"></button>
+              <button class="color-choose-btn" id="green2-color"></button>
+              
+              <button class="color-choose-btn" id="red3-color"></button>
+              <button class="color-choose-btn" id="pink3-color"></button>
+              <button class="color-choose-btn" id="gray3-color"></button>
+              <button class="color-choose-btn" id="purple3-color"></button>
+              <button class="color-choose-btn" id="green3-color"></button>
+
+
+              <button class="color-choose-btn" id="red4-color"></button>
+              <button class="color-choose-btn" id="pink4-color"></button>
+              <button class="color-choose-btn" id="gray4-color"></button>
+              <button class="color-choose-btn" id="purple4-color"></button>
+              <button class="color-choose-btn" id="green4-color"></button> -->
+            </div>
+            <div class="first-row-colors">
+              <button class="color-choose-btn" id="red1-color"></button>
+              <button class="color-choose-btn" id="pink1-color"></button>
+              <button class="color-choose-btn" id="gray1-color"></button>
+              <button class="color-choose-btn" id="purple1-color"></button>
+              <button class="color-choose-btn" id="green1-color"></button>
+            </div>
+            <div class="first-row-colors">
+              <button class="color-choose-btn" id="red2-color"></button>
+              <button class="color-choose-btn" id="pink2-color"></button>
+              <button class="color-choose-btn" id="gray2-color"></button>
+              <button class="color-choose-btn" id="purple2-color"></button>
+              <button class="color-choose-btn" id="green2-color"></button>
+            </div>
+            <div class="first-row-colors">
+              <button class="color-choose-btn" id="red3-color"></button>
+              <button class="color-choose-btn" id="pink3-color"></button>
+              <button class="color-choose-btn" id="gray3-color"></button>
+              <button class="color-choose-btn" id="purple3-color"></button>
+              <button class="color-choose-btn" id="green3-color"></button>
+            </div>
+            <div class="first-row-colors">
+              <button class="color-choose-btn" id="red4-color"></button>
+              <button class="color-choose-btn" id="pink4-color"></button>
+              <button class="color-choose-btn" id="gray4-color"></button>
+              <button class="color-choose-btn" id="purple4-color"></button>
+              <button class="color-choose-btn" id="green4-color"></button>
+            </div>
+          </div>
+            <div class="confirm-cancel-btn-colors">
+              <button class="cancel-editing-colors">CANCEL</button>
+              <button class="confirm-editing-colors">CONFIRM</button>
+              
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-9" id="b">
+          <!-- preview section -->
+          <div class="preview-section">
+            <!-- <h1>preview section</h1> -->
+            <!-- close button -->
+            <div class="close-btn">
+              <a href="index.html"><i class="bi bi-x-lg"></i></a>
+            </div>
+            <div class="container-for-draggale-element">
+
+            </div>
+            <div class="preview-text-show">
+            <p id="preview-text-show" class="draggable" draggable="true">Mine</p>  
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="personalisation.js"></script>
+  </body>
+</html>

@@ -1,0 +1,263 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+}
+.container-fluid {
+  margin: 0;
+  padding: 0;
+}
+.main-section {
+  height: 100vh;
+  background-color: #FFD2BB;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.main-section .wrapper {
+  width: 100%;
+  margin: 20px;
+}
+/* text */
+.text-and-style {
+  border: 1px solid #408AB4;
+  height: 50px;
+  border-radius: 25px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 10px;
+}
+.text-and-style .font-icon {
+  width: 35px;
+  height: 35px;
+  border: 1px solid #408AB4;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 6px;
+}
+.text-and-style .font-icon .bi {
+  font-size: 30px;
+  padding: 5px;
+}
+.text-and-style .text {
+  margin-left: 20px;
+}
+.text-and-style .text span {
+  font-weight: 600;
+  font-size: 1rem;
+}
+/* image */
+.image-and-logo {
+  border: 1px solid #408AB4;
+  height: 50px;
+  border-radius: 25px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 10px;
+}
+.image-and-logo .font-icon {
+  width: 35px;
+  height: 35px;
+  border: 1px solid #408AB4;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 6px;
+}
+.image-and-logo .font-icon .bi {
+  font-size: 22px;
+  padding: 5px;
+}
+.image-and-logo .text {
+  margin-left: 20px;
+}
+.image-and-logo .text span {
+  font-weight: 600;
+  font-size: 1rem;
+}
+/* color */
+.colors {
+  border: 1px solid #408AB4;
+  height: 50px;
+  border-radius: 25px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 10px;
+}
+.colors .font-icon {
+  width: 35px;
+  height: 35px;
+  border: 1px solid #408AB4;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 6px;
+}
+.colors .font-icon .bi {
+  font-size: 22px;
+  padding: 5px;
+}
+.colors .text {
+  margin-left: 20px;
+}
+.colors .text span {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.agreement-content {
+  height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+.agreement-content .agreement-title {
+  text-align: center;
+  width: 55%;
+}
+.agreement-content .agreement-title .second-visible {
+  display: none;
+}
+.agreement-content .agreement-title .lead {
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin-top: 40px;
+}
+
+.agreement-content .icons-and-text {
+  width: 65%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.icons-and-text .truck-and-description p {
+  text-align: center;
+  font-size: 20px;
+}
+.icons-and-text .truck-and-description .truck-icon {
+  width: 100%;
+}
+.truck-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 100px;
+  font-size: 120px;
+}
+
+.icons-and-text .calender-and-description p {
+  text-align: center;
+  font-size: 20px;
+}
+.icons-and-text .calender-and-description .calender-icon {
+  width: 100%;
+}
+.calender-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 100px;
+  font-size: 92px;
+}
+
+.close-btn {
+  position: fixed;
+  right: 25px;
+  top: 15px;
+  font-size: 30px;
+  font-weight: bold;
+}
+.accept-btn {
+  border-radius: 25px;
+  height: 50px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.accept-btn .btn {
+  padding: 10px;
+  border-radius: 25px;
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 992px) {
+  .agreement-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .agreement-content .agreement-title .first-visible {
+    display: none;
+  }
+  .agreement-content .agreement-title .second-visible {
+    display: block;
+  }
+  .agreement-content .icons-and-text {
+    display: block;
+    width: 75%;
+  }
+  .icons-and-text .truck-and-description {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .icons-and-text .calender-and-description {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .icons-and-text .truck-and-description .truck-icon {
+    width: auto
+  }
+  .truck-icon {
+    width: 100px;
+    height: 100px;
+    font-size: 60px;
+  }
+  .icons-and-text .calender-and-description .calender-icon {
+    width: auto;
+  }
+  .calender-icon {
+    width: 100px;
+    height: 100px;
+    font-size: 47px;
+  }
+  .icons-and-text .truck-and-description p {
+    /* text-align: justify; */
+    font-size: 0.9rem;
+    margin-left: 10px;
+  }
+  .icons-and-text .calender-and-description p {
+    /* text-align: justify; */
+    font-size: 0.9rem;
+    margin-left: 10px ;
+  }
+  .agreement-content .agreement-title .lead {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-top: 40px;
+  }
+  
+}
+
+/* @media screen and (max-width: 768px) {
+  .img-preview {
+    display: none;
+  }
+} */
